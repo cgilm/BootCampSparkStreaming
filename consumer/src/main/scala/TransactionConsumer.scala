@@ -45,8 +45,8 @@ object TransactionConsumer extends App {
 
  // configure the number of cores and RAM to use
   val conf = new SparkConf()
-    .set("spark.cores.max", "4")
-    .set("spark.executor.memory", "2G")
+    .set("spark.cores.max", "1")
+    .set("spark.executor.memory", "1G")
     .setAppName(appName)
     
   val sc = SparkContext.getOrCreate(conf)
